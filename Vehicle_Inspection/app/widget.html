@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<!--AJAX src link lib-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+<!--JQuery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!--JS SDK Zoho creator-->
+<script src=" https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+<!-- Style Section -->
+<style>
+
+.Front_Bumper_1{
+  /* background-color: aqua; */
+  margin-top:-340px;
+  margin-left: 870px;
+  position: absolute;
+}
+  #Front_Bumper_1{
+  border-radius: 3px;
+}
+#Front_Bumper_1:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+
+.Bonnet_2{
+  color: grey;
+  margin-top:-340px;
+  margin-left: 740px;
+  position: absolute;
+}
+#Bonnet_2{
+  border-radius: 3px;
+}
+#Bonnet_2:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Front_Windshield_3{
+  color: grey;
+  margin-top:-340px;
+  margin-left: 610px;
+  position: absolute;
+}
+#Front_Windshield_3{
+  border-radius: 3px;
+}
+#Front_Windshield_3:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Right_Window_4{
+  color: grey;
+  margin-top:-210px;
+  margin-left: 510px;
+  position: absolute;
+
+}
+#Right_Window_4{
+  border-radius: 3px;
+}
+#Right_Window_4:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Left_Window_5{
+  color: grey;
+  margin-top:-475px;
+  margin-left: 510px;
+  position: absolute;
+
+}
+#Left_Window_5{
+  border-radius: 3px;
+}
+#Left_Window_5:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Right_Door_6{
+  color: grey;
+  margin-top:-135px;
+  margin-left: 530px;
+  position: absolute;
+
+}
+#Right_Door_6{
+  border-radius: 3px;
+}
+#Right_Door_6:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Left_Door_7{
+  color: grey;
+  margin-top:-540px;
+  margin-left: 530px;
+  position: absolute;
+
+}
+#Left_Door_7{
+  border-radius: 3px;
+}
+#Left_Door_7:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Front_Right_Tyre_8{
+  color: grey;
+  margin-top:-95px;
+  margin-left: 698px;
+  position: absolute;
+
+}
+#Front_Right_Tyre_8{
+  border-radius: 3px;
+}
+#Front_Right_Tyre_8:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Front_Left_Tyre_9{
+  color: grey;
+  margin-top:-590px;
+  margin-left: 700px;
+  position: absolute;
+
+}
+#Front_Left_Tyre_9{
+  border-radius: 3px;
+}
+#Front_Left_Tyre_9:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Rear_Right_Tyre_10{
+  color: grey;
+  margin-top:-95px;
+  margin-left: 293px;
+  position: absolute;
+
+}
+#Rear_Right_Tyre_10{
+  border-radius: 3px;
+}
+#Rear_Right_Tyre_10:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Rear_Left_Tyre_11{
+  color: grey;
+  margin-top:-590px;
+  margin-left: 293px;
+  position: absolute;
+}
+#Rear_Left_Tyre_11{
+  border-radius: 3px;
+}
+#Rear_Left_Tyre_11:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Back_Door_12{
+  color: grey;
+  margin-top:-340px;
+  margin-left: 133px;
+  position: absolute;
+}
+#Back_Door_12{
+  border-radius: 3px;
+}
+#Back_Door_12:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Back_Bumper_13{
+  color: grey;
+  margin-top:-340px;
+  margin-left: 80px;
+  position: absolute;
+
+}
+#Back_Bumper_13{
+  border-radius: 3px;
+}
+#Back_Bumper_13:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Roof_14{
+  color: grey;
+  margin-top:-340px;
+  margin-left: 430px;
+  position: absolute;
+}
+#Roof_14{
+  border-radius: 3px;
+}
+#Roof_14:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Right_Tail_Light_15{
+  color: grey;
+  margin-top:-220px;
+  margin-left: 138px;
+  position: absolute;
+}
+#Right_Tail_Light_15{
+  border-radius: 3px;
+}
+#Right_Tail_Light_15:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Left_Tail_Light_16{
+  color: grey;
+  margin-top:-465px;
+  margin-left: 138px;
+  position: absolute;
+
+}
+#Left_Tail_Light_16{
+  border-radius: 3px;
+}
+#Left_Tail_Light_16:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Right_Headlight_17{
+  color: grey;
+  margin-top:-267px;
+  margin-left: 835px;
+  position: absolute;
+
+}
+#Right_Headlight_17{
+  border-radius: 3px;
+}
+#Right_Headlight_17:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Left_Headlight_18{
+  color: grey;
+  margin-top:-415px;
+  margin-left: 835px;
+  position: absolute;
+
+}
+#Left_Headlight_18{
+  border-radius: 3px;
+}
+#Left_Headlight_18:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Right_Rearview_Mirror_19{
+  color: grey;
+  margin-top:-182px;
+  margin-left: 580px;
+  position: absolute;
+}
+#Right_Rearview_Mirror_19{
+  border-radius: 3px;
+}
+#Right_Rearview_Mirror_19:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.Left_Rearview_Mirror_20{
+  color: grey;
+  margin-top:-499px;
+  margin-left: 580px;
+  position: absolute;
+
+}
+#Left_Rearview_Mirror_20{
+  border-radius: 3px;
+}
+#Left_Rearview_Mirror_20:hover{
+  background-color: rgb(236, 93, 93);
+  color: white;
+}
+.align{
+  padding-top: 20px;
+  margin-top: 10px;
+  opacity: 100;
+}
+.tot{
+margin-top: -630px;
+margin-left: 940px;
+display: none;
+}
+.sec1{
+  width: 300px; 
+  height: 570px; 
+  background-color:rgb(199, 197, 197); 
+  text-align: center;
+}
+#lab{
+    text-align: center;
+}
+#field{
+  text-align: center;
+  align-content: right;
+  margin-top: 15px;
+}
+/* input{
+    margin: 2px;
+    margin-left: 55px;
+    display:block;
+    width:50%;
+    padding: 4px;
+    border: 2px Solid rgb(51, 50, 50);
+} */
+#submit_1{
+  background:#fff;
+  padding:5px 5px;
+   color:#34495e;
+  font-weight:bolder;
+   text-transform:uppercase;
+   font-size:18px;
+  border-radius:20px;
+  box-shadow:6px 6px 29px -4px rgba(35, 35, 35, 0.75);
+  /* margin-top :26px; */
+  margin-bottom: 20px;
+  text-decoration:none;
+  transition:0.4s;
+  text-align:center;
+}
+#submit_1:hover{
+  background:#21b167;
+  color:rgb(239, 245, 241);
+  cursor: pointer;
+}
+#img{
+  background-image: url("stacked-peaks-haikei.png");
+}
+
+.carbody{
+  margin-left: -29px;
+}
+#img1{
+  width: 55%;
+  padding: 4px;
+  border: 2px Solid rgb(51, 50, 50);
+}
+.output {
+  overflow-y:auto;
+  /* height:35px; */
+  width:250px;
+}
+</style>
+
+</head>
+  <body >
+    <div class="body1" >
+      <div class="carbody">
+      <div>
+      <img class="imgcar" src="Car-img.png">
+    </div>
+    <div class="Front_Bumper_1" >
+    <button title="Front_Bumper_1" id="Front_Bumper_1" ><i class="fa fa-plus"> </i></button>
+  </div>
+  <div class="Bonnet_2">
+    <button title="Bonnet_2"  id="Bonnet_2"> <i class="fa fa-plus"> </i> </button>
+    </div>
+    <div class="Front_Windshield_3">
+    <button title="Front_Windshield_3" id="Front_Windshield_3"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Right_Window_4">
+    <button title="Right_Window_4" id="Right_Window_4"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Left_Window_5">
+    <button title="Left_Window_5" id="Left_Window_5"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Right_Door_6">
+    <button title="Right_Door_6" id="Right_Door_6" > <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Left_Door_7">
+    <button title="Left_Door_7" id="Left_Door_7"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Front_Right_Tyre_8">
+    <button title="Front_Right_Tyre_8" id="Front_Right_Tyre_8"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Front_Left_Tyre_9">
+    <button title="Front_Left_Tyre_9" id="Front_Left_Tyre_9"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Rear_Right_Tyre_10">
+    <button title="Rear_Right_Tyre_10" id="Rear_Right_Tyre_10"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Rear_Left_Tyre_11">
+    <button title="Rear_Left_Tyre_11" id="Rear_Left_Tyre_11"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Back_Door_12">
+    <button title="Back_Door_12" id="Back_Door_12" > <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Back_Bumper_13">
+    <button title="Back_Bumper_13" id="Back_Bumper_13"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Roof_14">
+  <button title="Roof_14" id="Roof_14"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Right_Tail_Light_15">
+  <button title="Right_Tail_Light_15" id="Right_Tail_Light_15"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Left_Tail_Light_16">
+  <button title="Left_Tail_Light_16" id="Left_Tail_Light_16"> <i class="fa fa-plus"> </i> </button> 
+  </div>
+  <div class="Right_Headlight_17">
+  <button title="Right_Headlight_17" id="Right_Headlight_17"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Left_Headlight_18">
+  <button title="Left_Headlight_18" id="Left_Headlight_18"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Right_Rearview_Mirror_19">
+  <button title="Right_Rearview_Mirror_19" id="Right_Rearview_Mirror_19" > <i class="fa fa-plus"> </i> </button>
+  </div>
+  <div class="Left_Rearview_Mirror_20">
+  <button title="Left_Rearview_Mirror_20" id="Left_Rearview_Mirror_20"> <i class="fa fa-plus"> </i> </button>
+  </div>
+  </div>
+<div class="tot" id="tot">
+  <section class="sec1" id="img" >
+    <div class="align">
+  <input type="hidden" style="width: 100px;" id="reg_No" class="field">
+    <div style="margin-top: 15px;">
+      <label for="date" id="lab"><b>Date of Incident</b></label>
+      </div>
+      <input type="date" style="width: 100px; margin-top: 15px; cursor: pointer;" id="date_1"><br>
+      <div style="margin-top: 10px;">
+        <label for="part" class="lab" id="part_lab"><b>Part</b></label>
+    </div>
+    <input name="part"style="width: 100px; margin-top: 10px;" type="un-clickable" id="part_1"class="lab">
+    <br>
+    <div style="margin-top: 10px;">
+      <label for="damage type"  class="lab"><b>Damage Type</b></label>
+  </div>
+  <select name="damage type" style="width: 100px; margin-top:10px;cursor: pointer;" id="Damage_ID" class="field">
+        <option>Minor</option>
+        <option>Major</option>
+        <option>Cosmetic</option>
+  </select><br>
+  <div style="margin-top:10px;">
+    <label for="Descrip" id="lab" ><b>Description</b></label>
+</div>
+<textarea name="Description" id="field" cols="20" rows="5" style="margin-top: 15px; resize: none;"></textarea><br>
+</div><br>
+<form>
+  <div class="form-content">
+    <label for="imagefile"><b>Attach your Images</b></label>
+    <input multiple type="file"  id="img1" name="filename" accept="image/*;" capture="user" style="margin-top: 15px;cursor: pointer;" enctype="multipart/form-data" onchange="fileInfo()">
+    <pre class="output"></pre>
+    <!-- <button id="btn-example-file-reset" type="button">Reset file</button> -->
+  </div><br>
+  
+  </form>
+<div>
+  <input  type="submit" name="submit" id="submit_1">
+</div>
+  </section>
+ </div>
+</div>
+<script>
+
+   // for Reset
+  //    $('#btn-example-file-reset').on('click', function(e) {
+  //     var $el = $('#img1');
+  //     $el.wrap('<form>').closest('form').get(0).reset();
+  //     $el.unwrap();
+  //  });
+  var testarr = [];
+    function fileInfo(){
+      
+    var testImage = document.getElementById("img1");
+    for(let i=0;i<testImage.files.length;i++){
+    var multiImageVariable = testImage.files[i];
+      testarr.push(multiImageVariable);
+ }
+}
+    
+   $(document).ready(function(){
+  ZOHO.CREATOR.init()
+        .then(function(data) {
+   
+    const output = document.querySelector('.output');
+    const fileInput = document.querySelector("#img1");
+    fileInput.addEventListener("change", () => {
+    for (const file of fileInput.files) {
+       output.innerText += `${file.name},`;
+    }
+  });
+
+  //This date object are used to update date in Widget.
+  //("0" + (date.getMonth()+1)).slice(-2) this code snip is used for edge cases. 
+  //For example scenario, Assume Today date is 1/1/2022, the date tag doesn't accept single digit date and months so i converting it to double digit.
+  var date = new Date();
+    var current_date = date.getFullYear()+"-"+("0" + (date.getMonth()+1)).slice(-2)+"-"+ ("0" + date.getDate()).slice(-2);
+    $("#date_1").val(current_date);
+
+document.getElementById("Damage_ID").innerHTML;
+
+//Declaring this Variables to store response record id to update images.
+ var id1,secondapiID;
+
+//API for getting Page Parameter which is passed while clicking Log Incident Button
+ var s = ZOHO.CREATOR.UTIL.getQueryParams("Vehicle_Register_Number");{
+          getID = s.Vehicle_Register_Number;
+          console.log(s.Vehicle_Register_Number);
+          $("#reg_No").val(getID);
+          }
+
+   $("#submit_1").click(function(){
+//First "Add Record" API Call to add Vehicle Inspections form details to Vehicle Incident Report 
+// After successfull API Call getting response id, with that Calling Second API
+// Second "Add Record" API Call to add response id to report, After Successfull API Call getting response id with that Making Third API Call
+// In Third API Call(Upload file) to update a image file to respective id which is present in Image Report.
+  var vrn = $("#reg_No").val();
+  var prt = $("#part_1").val();
+  var dat = $("#date_1").val();
+  var dam = $("#Damage_ID").val();
+  var des = $("#field").val();
+  formData={
+    "data":{
+      "Part":prt,
+      "Date_of_Incident":dat,
+      "Vehicle_Register_Number":vrn,
+      "Damage_Type":dam,
+      "Description":des,
+    } 
+  }
+   console.log(formData);
+var config = { 
+          appName : "Vehicle-Inspection",
+          formName : "Vehicle_Incidents",
+          data : formData 
+}
+//first API Call to add Record.
+ZOHO.CREATOR.API.addRecord(config).then(function(response){ 
+	if(response.code == 3000){
+	 console.log("Record added successfully");
+   console.log(response.data.ID);
+   id1 = response.data.ID;
+    //for loop for Calling second and Third API Call for Uploading Multiple Images.
+   for(let i=0;i<testarr.length;i++){
+       console.log("APi Count "+(i+1));
+         var count=i+1;
+      //second add record API Call
+    secondApiData={
+      "data":{
+        "Vehicle_Incidents":id1
+      }
+    } 
+    secondApi = {
+        appName : "Vehicle-Inspection",
+        formName : "Images",
+        data : secondApiData
+}
+ZOHO.CREATOR.API.addRecord(secondApi).then(function(response){
+  if(response.code == 3000){
+    console.log("New image report Created ");
+    secondapiID = response.data.ID;
+    console.log(secondapiID);
+
+    // Third API Call for Updating Image in Image Report
+  var fileObject = testarr[i];
+  var con = { 
+        appName : "Vehicle-Inspection",
+	      reportName : "Images_Report", 
+	      id : secondapiID,
+      	fieldName : "Images",
+        file : fileObject
+} 
+ZOHO.CREATOR.API.uploadFile(con).then(function(response){
+  console.log(response.code)
+  if(response.code == 3000){    
+  console.log("file added successfully");
+   //the below code is used for, after successfully updating multiple images if i click again onclick + button the previous images still exists in the form.
+   //to overcome this Issue I'll just created count variable for each for it will count and if it is reaches the Array length then i just popup all elements from Array.
+   //window.location.relaod it is used for clear the text ex:jj.png,lee.png which all the images name i uploaded previously.
+        if(count == testarr.length){
+          while (testarr.length) { 
+           testarr.pop(); 
+           }
+           window.location.reload();
+        }
+  }else{
+    console.log("Unable to upload subform Images");
+  }
+});
+  }else{
+    console.log("unable to add ID to Image Report");
+  }
+});
+}
+  }
+  document.querySelector("#tot").style.display="none";
+    });
+});
+
+   });
+  });
+
+  //Onclick functions for + button in Vehicle Inspection Report
+$("#Front_Bumper_1").click(function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Front Bumper');
+document.getElementById("part_1").disabled = true;
+})
+
+document.getElementById("Bonnet_2").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Bonnet');
+document.getElementById("part_1").disabled = true;
+});
+
+document.getElementById("Front_Windshield_3").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Front Windshield');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Right_Window_4").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Right Window');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Left_Window_5").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Left Window');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Right_Door_6").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Right Door');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Left_Door_7").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Left Door');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Front_Right_Tyre_8").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Front Right Tyre');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Front_Left_Tyre_9").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Front Left Tyre');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Rear_Right_Tyre_10").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Rear Right Tyre');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Rear_Left_Tyre_11").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Rear Left Tyre');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Back_Door_12").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Back Door');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Back_Bumper_13").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Back Bumper');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Roof_14").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Roof');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Right_Tail_Light_15").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Right Tail Light');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Left_Tail_Light_16").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Left Tail Light');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Right_Headlight_17").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Right Headlight');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Left_Headlight_18").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Left Headlight');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Right_Rearview_Mirror_19").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Right Rearview Mirror');
+document.getElementById("part_1").disabled = true;
+});
+
+
+document.getElementById("Left_Rearview_Mirror_20").addEventListener("click",function(){
+document.querySelector("#tot").style.display="flex";
+$("#part_1").val('Left Rearview Mirror');
+document.getElementById("part_1").disabled = true;
+});
+
+</script>
+  </body>
+</html>
